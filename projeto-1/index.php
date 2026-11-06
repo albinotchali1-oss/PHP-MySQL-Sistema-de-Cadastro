@@ -14,17 +14,17 @@
                 <h1>Login</h1>
                 <p>Seja bem-vindo</p>
                 <hr>
-                <form method="post" autocomplete="on">  
+                <form action="testelogin.php" method="post" autocomplete="on">  
                     <div>
                         <label for="email">Email</label>
-                        <input type="email" name="login" id="email" placeholder="Digite seu email" autocomplete="email" required maxlength="30">
+                        <input type="email" name="email" id="email" placeholder="Digite seu email" autocomplete="email" required maxlength="30">
                     </div>
                     <div>
                         <label for="senha">Senha</label>
                         <input type="password" name="senha" id="senha" placeholder="Digite sua senha" autocomplete="current-password" required minlength="8" maxlength="20">
                     </div>
                     <button type="submit">Entrar</button>
-                    <p>Ainda não tens uma conta? <a href="#">Cadastre-se</a></p>
+                    <p>Ainda não tens uma conta? <a href="form.php">Cadastre-se</a></p>
                 </form>
             </div>
         </section>

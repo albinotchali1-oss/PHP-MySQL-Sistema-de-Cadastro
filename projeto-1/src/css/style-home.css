@@ -1,0 +1,51 @@
+@import url('variables.css');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--color-background);
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    color: var(--color-text);
+}
+header{
+    background-color: var(--color-card);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    box-shadow: 0px 0px 8px var(--color-shadow);
+
+    .btn-sair{
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
+        border: none;
+        background-color: red;
+        color: var(--color-text-inverso);
+        font-weight: 550;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        &:hover{
+            background-color: transparent;
+            border: 2px solid red;
+            color: black;
+        }
+    }
+}
+main{
+    text-align: center;
+    h1{
+        padding-top: 2rem;
+        font-size: 2rem;
+        font-weight: 550;
+    }
+    p > strong{
+        text-decoration: underline;
+    }
+}
