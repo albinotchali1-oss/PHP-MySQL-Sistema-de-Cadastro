@@ -100,6 +100,42 @@ main {
                         box-shadow: 0 0 0 3px #010a2420;
                     }
                 }
+
+                .campo-senha {
+                    position: relative;
+
+                    > input {
+                        padding-right: 5.5rem;
+                    }
+
+                    > button {
+                        position: absolute;
+                        top: 50%;
+                        right: .5rem;
+                        width: auto;
+                        min-height: 0;
+                        margin: 0;
+                        padding: .35rem .55rem;
+                        transform: translateY(-50%);
+                        border: 0;
+                        border-radius: 6px;
+                        background: transparent;
+                        color: var(--color-text);
+                        cursor: pointer;
+                        font-size: .85rem;
+                        font-weight: 700;
+
+                        &:hover {
+                            background-color: #e8edf5;
+                            color: var(--color-text);
+                        }
+
+                        &:focus-visible {
+                            outline: 2px solid var(--color-destaque);
+                            outline-offset: 1px;
+                        }
+                    }
+                }
             }
 
             .campo-genero {
