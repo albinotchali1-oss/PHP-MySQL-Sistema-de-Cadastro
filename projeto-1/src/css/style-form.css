@@ -81,7 +81,8 @@ main {
                     font-weight: 600;
                 }
 
-                > input {
+                > input,
+                .campo-senha > input {
                     width: 100%;
                     min-height: 48px;
                     padding: .75rem;

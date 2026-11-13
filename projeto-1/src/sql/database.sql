@@ -11,3 +11,8 @@ create table usuarios(
     cidade varchar(20) not null,
     sexo enum('M', 'F') not null
 );
+
+CREATE USER 'tchali'@'localhost' IDENTIFIED BY '12345';
+GRANT ALL PRIVILEGES ON cadastro.* TO 'tchali'@'localhost';
+FLUSH PRIVILEGES;
+SHOW GRANTS FOR 'tchali'@'localhost';

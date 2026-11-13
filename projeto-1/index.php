@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="src/css/style-login.css">
+       <script src="src/js/toggle-senha.js" defer></script>
 </head>
 <body>
     <main>
@@ -21,7 +22,10 @@
                     </div>
                     <div>
                         <label for="senha">Senha</label>
-                        <input type="password" name="senha" id="senha" placeholder="Digite sua senha" autocomplete="current-password" required minlength="8" maxlength="20">
+                        <div class="campo-senha">
+                            <input type="password" name="senha" id="senha" placeholder="Digite sua senha" autocomplete="current-password" required minlength="8" maxlength="20">
+                            <button type="button" data-toggle-password aria-controls="senha" aria-pressed="false" aria-label="Mostrar senha">Mostrar</button>
+                        </div>
                     </div>
                     <button type="submit">Entrar</button>
                     <p>Ainda não tens uma conta? <a href="form.php">Cadastre-se</a></p>

@@ -1,5 +1,5 @@
 <?php
-
+require_once 'config.php';
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     header('Location: index.php');
     exit;
@@ -8,7 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 $email = isset($_POST['email']) && is_string($_POST['email']) ? trim($_POST['email']) : '';
 $senhaOriginal = isset($_POST['senha']) && is_string($_POST['senha']) ? $_POST['senha'] : '';
 
-include_once 'config.php';
+
 
 $senha = $senhaOriginal;
 $sql = 'SELECT id, senha FROM usuarios WHERE email = ?';

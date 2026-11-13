@@ -6,6 +6,7 @@
     <meta name="theme-color" content="#f3f5f1">
     <title>Cadastro de clientes</title>
     <link rel="stylesheet" href="src/css/style-form.css">
+       <script src="src/js/toggle-senha.js" defer></script>
 </head>
 <body>
     <main>
@@ -30,7 +31,10 @@
                         </div>
                         <div class="campo">
                             <label for="senha">Senha</label>
-                            <input type="password" name="senha" id="senha" autocomplete="new-password" minlength="8" maxlength="20" required>
+                               <div class="campo-senha">
+                                   <input type="password" name="senha" id="senha" autocomplete="new-password" minlength="8" maxlength="20" required>
+                                   <button type="button" data-toggle-password aria-controls="senha" aria-pressed="false" aria-label="Mostrar senha">Mostrar</button>
+                               </div>
                         </div>
                         <div class="campo">
                             <label for="telefone">Telefone</label>
